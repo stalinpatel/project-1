@@ -15,6 +15,7 @@ disable_submit_btn();
 let local_rem_lim = parseInt(localStorage.getItem("rem_limit"));
 
 if (local_rem_lim > 0) {
+  alert("Once Option is selected it can't be changed later . So, choose wisely");
   verifyAnswer(firstQuestion);
 } else {
   disable_all_inputs();
